@@ -1,3 +1,4 @@
+import Homepagehero from "@/components/Homepagehero/Homepagehero";
 import Navber from "@/components/Navbar/Navber";
 import Image from "next/image";
 
@@ -37,11 +38,8 @@ export default function Home() {
       <header className="bg-navbarbg text-white ">
         <Navber />
       </header>
+      <Homepagehero/>
 
-      {/* Main Content - Responsive */}
-      <main className="flex-grow flex flex-col items-center sm:items-start p-4 sm:p-8 gap-8"> {/* Centered on mobile, left-aligned on small screens and up */}
-        <h1 className="text-xl sm:text-3xl">Welcome to the Home Page</h1>
-      </main>
 
       <footer className="h-5 text-center text-xs text-gray-500 mb-2">
         © 2025 YourSite
