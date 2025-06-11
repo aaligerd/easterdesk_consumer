@@ -3,6 +3,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --navbarbackground:#cf3207;
+  
+
+}
+
+html,
+body {
+  height: 100vh;
 }
 
 @theme inline {
