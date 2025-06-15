@@ -1,5 +1,7 @@
 import Homepagehero from "@/components/Homepagehero/Homepagehero";
+import LatestNews from "@/components/LatestNews/LatestNews";
 import Navber from "@/components/Navbar/Navber";
+import TrendingHeadlines from "@/components/TrendingHeadlines/TrendingHeadlines";
 import Image from "next/image";
 
 export default function Home() {
@@ -39,6 +41,10 @@ export default function Home() {
         <Navber />
       </header>
       <Homepagehero/>
+      <div className="flex mx-auto sm:w-[95%] md:w-[85%] lg:w-[75%] xl:w-[65%] 2xl:w-[55%]">
+      <LatestNews/>
+      <TrendingHeadlines/>
+      </div>
 
 
       <footer className="h-5 text-center text-xs text-gray-500 mb-2">
