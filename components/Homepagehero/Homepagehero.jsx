@@ -22,29 +22,34 @@ function Homepagehero() {
       link: "/page3",
     }
   ];
+
   return (
     <div className="w-[100%] sm:w-[95%] md:w-[85%] lg:w-[75%] mx-auto flex flex-col-reverse justify-center md:flex-row bg-amber-50">
       <div className="mx-auto w-[90%] sm:w-[90%] md:w-[50%] lg:w-1/2 p-4 sm:p-5 bg-amber-50 flex flex-col gap-y-4 sm:gap-y-5">
         <Carosule slides={data} />
         <div className="flex">
-          <div className="headlines w-[50%]">
-            <p className="pr-1.5 text-sm">
-              is a long established fact that a reader will be distracted by the
-              readable conten
+          <div className="w-[70%]">
+            <h2 className="text-lg mb-2 font-[Georgia] font-[700] text-[15px] text-[#000000]">Philomena Cunk Is Weird Enough to Take on the World</h2>
+            <p className="pr-1.5 text-sm font-[Georgia] font-[400] text-[10px] text-[#881609]">
+              It is a long established fact that a reader will be distracted by the
+              readable content.
             </p>
           </div>
-          <div className="w-[50%]">
+
+          <div className="w-[30%] flex justify-end items-end">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNg0fjbKwKsbZ9cEpmM3Ecpp415tNBNerdC9ns6TB8WYF16jfIXtXXFOyTybwAWr8_WaA&usqp=CAU"
               alt=""
+              className="w-[106px] h-[60px] object-cover"
             />
           </div>
         </div>
+
       </div>
       <div className="mx-auto w-full flex flex-col justify-between md:w-[50%]">
-        <div className="w-full h-[50%] flex bg-[#ad371af3] items-center">
+        <div className="w-full h-[50%] flex bg-[#881609] items-center">
           <div className="w-[35%]">
-            <p className="p-4 text-amber-50 text-sm">
+            <p className="p-4 text-[#D5D5D5] text-sm font-[Georgia] font-[400] text-[16px]">
               The point of using Lorem Ipsum is that it has a more-or-less
               normal distribution of letters.
             </p>
@@ -58,25 +63,39 @@ function Homepagehero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
               <div className="absolute bottom-5 left-[10%] font-semibold drop-shadow-lg">
-                <p className="text-white text-s text-start"> readable English. Many desktop public</p>
+                <p className="text-[#F7F7F4] text-s text-start font-[Georgia] font-[700] text-[20px]"> readable English. Many desktop public</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="hidden pb-[20px] sm:flex h-[50%] md:items-end bg-amber-50">
-            <div className="w-[50%] h-[60%]">
-                <img src="https://www.hindustantimes.com/ht-img/img/2025/06/11/550x309/Puri-superintendent-of-police--SP--Vinit-Agrawal-s_1749656202489.jpg" alt="" className="w-full h-full object-cover" />
+        <div className="hidden pb-[20px] sm:flex md:items-end bg-amber-50">
+          
+          <div className="w-[172px] h-[185px] flex-shrink-0">
+            <img
+              src="https://www.hindustantimes.com/ht-img/img/2025/06/11/550x309/Puri-superintendent-of-police--SP--Vinit-Agrawal-s_1749656202489.jpg"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Divider */}
+          <div className="w-[2px] h-[135px] mx-2.5 bg-[#F1F0F0]"></div>
+
+          {/* Text Section */}
+          <div className="flex flex-col justify-between h-[185px]">
+            <div>
+              <p className="text-[18px] lg:text-[20px] font-[Georgia] font-bold text-black leading-tight">
+                Ters, as opposed to using 'Content here, content here', making it look like readable English.
+              </p>
             </div>
-            <div className="w-[1px] h-[60%] mx-2.5 bg-amber-950"></div>
-            <div className="h-[60%] flex flex-col justify-between">
-                <div>
-                    <p className="text-sm lg:text-xl">ters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                </div>
-                <div>
-                    <p className="text-[12px] text-amber-700">ters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                </div>
+            <div>
+              <p className="text-[16px] text-[#881609] font-[Georgia] font-normal leading-snug">
+                Ters, as opposed to using 'Content here, content here', making it look like readable English.
+              </p>
             </div>
+          </div>
         </div>
+
       </div>
     </div>
   );

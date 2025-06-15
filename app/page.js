@@ -21,12 +21,14 @@ export default function Home() {
             <input
               type="text"
               placeholder="Search for headlines"
-              className="flex-grow border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary bg-amber-900 text-white"
+              className="flex-grow border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary bg-[#660707] text-[#F7F7F459] font-[MaryToddW00-Regular] font-[400] text-[16.61px]"
               aria-label="Search"
             />
             <button
               type="submit"
-              className="bg-[#ad371af3] text-white px-4 py-2 hover:bg-primary/90 transition-colors duration-200 uppercase"
+              className="bg-[#8E4042] text-[#F7F7F4] px-4 py-2 hover:bg-primary/90 transition-colors duration-200 uppercase font-[MaryToddW00-Black] font-normal text-[19.37px]"
+
+
               aria-label="Submit search"
             >
               Search
@@ -35,10 +37,10 @@ export default function Home() {
         </div>
       </div>
 
-      <header className="bg-navbarbg text-white ">
+      <header className="bg-navbarbg text-[#FDFDFD] ">
         <Navber />
       </header>
-      <Homepagehero/>
+      <Homepagehero />
 
 
       <footer className="h-5 text-center text-xs text-gray-500 mb-2">

@@ -14,7 +14,7 @@ function Navber() {
   return (
     <nav
       className="
-        bg-[#ad371af3] 
+        bg-[#881609] 
         overflow-x-auto 
         whitespace-nowrap 
         snap-x snap-mandatory 
@@ -34,13 +34,12 @@ function Navber() {
                 snap-start 
                 px-3 py-2 
                 cursor-pointer 
-                hover:bg-   -900 
-                rounded-md
+                hover:bg-[#530000] 
                 ${isActive ? "font-bold text-black bg-amber-300" : "text-white"}
               `}
             >
               <Link href={path}>
-                <span className="uppercase text-base select-none">{item}</span>
+                <span className="text-base select-none font-[Alatsi] font-[400] text-[17px]">{item}</span>
               </Link>
             </div>
           );
