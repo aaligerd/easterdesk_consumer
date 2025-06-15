@@ -29,7 +29,7 @@ export default function Carousel({ slides }) {
                 alt="carousel-slide"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
-              <div className="absolute bottom-5 left-5 text-white text-xl font-[Georgia] font-bold text-[24px] drop-shadow-lg">
+              <div className="absolute bottom-5 left-5 text-white font-[Georgia] font-bold lg:text-[20px] text-xs drop-shadow-lg  md:text-[16px]">
                 {ele.text}
               </div>
             </div>

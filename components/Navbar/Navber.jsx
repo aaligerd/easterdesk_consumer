@@ -39,7 +39,7 @@ function Navber() {
               `}
             >
               <Link href={path}>
-                <span className="text-base select-none font-[Alatsi] font-[400] text-[17px]">{item}</span>
+                <span className="text-xs select-none font-[Alatsi] font-[400] lg:text-[17px]">{item}</span>
               </Link>
             </div>
           );
