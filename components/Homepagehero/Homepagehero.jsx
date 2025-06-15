@@ -84,12 +84,12 @@ function Homepagehero() {
           {/* Text Section */}
           <div className="flex flex-col justify-between h-[185px]">
             <div>
-              <p className="text-[18px] lg:text-[20px] font-[Georgia] font-bold text-black leading-tight">
+              <p className="text-[20px] lg:text-[20px] font-[Georgia] font-[700] text-black leading-tight">
                 Ters, as opposed to using 'Content here, content here', making it look like readable English.
               </p>
             </div>
             <div>
-              <p className="text-[16px] text-[#881609] font-[Georgia] font-normal leading-snug">
+              <p className="text-[16px] text-[#881609] font-[Georgia] font-[400] leading-snug">
                 Ters, as opposed to using 'Content here, content here', making it look like readable English.
               </p>
             </div>
