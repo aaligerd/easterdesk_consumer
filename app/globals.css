@@ -26,7 +26,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #fff3c5;
+    --background: #FFFBED;
     --foreground: #101010;
   }
 }
@@ -39,4 +39,12 @@ body {
 
 ::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
+}
+
+
+@font-face {
+  font-family: 'Alatsi';
+  src: url('../fonts/Alatsi-Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }

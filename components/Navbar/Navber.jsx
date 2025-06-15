@@ -14,7 +14,8 @@ function Navber() {
   return (
     <nav
       className="
-        bg-[#881609] 
+        w-full
+        bg-[#881609]
         overflow-x-auto 
         whitespace-nowrap 
         snap-x snap-mandatory 
@@ -22,7 +23,7 @@ function Navber() {
         "
       aria-label="Primary navigation"
     >
-      <div className="inline-flex px-4">
+      <div className="flex mx-auto px-4 w-full max-w-[85%]">
         {navbarItems.map((item) => {
           const path = generatePath(item);
           const isActive = pathname === path;
@@ -39,7 +40,7 @@ function Navber() {
               `}
             >
               <Link href={path}>
-                <span className="text-xs select-none font-[Alatsi] font-[400] lg:text-[17px]">{item}</span>
+                <span className="text-xs select-none font-alatsi font-[400] lg:text-[17px]">{item}</span>
               </Link>
             </div>
           );

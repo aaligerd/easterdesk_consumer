@@ -68,9 +68,9 @@ function Homepagehero() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:w-full pb-[20px] sm:flex md:items-end bg-[#FDFDFD] sm:mx-auto sm:w-[85%]">
+        <div className="hidden lg:w-full pb-[20px] sm:flex md:items-end bg-[#FDFDFD] sm:mx-auto sm:w-[85%] md:w-full">
           
-          <div className="w-[172px] h-[185px] pr-4 pt-4 flex-shrink-0">
+          <div className="w-[172px] h-[185px] pr-4 pt-4 flex-shrink-0 xl:w-[192px] xl:h-[200px]">
             <img
               src="https://www.hindustantimes.com/ht-img/img/2025/06/11/550x309/Puri-superintendent-of-police--SP--Vinit-Agrawal-s_1749656202489.jpg"
               alt=""
@@ -79,7 +79,7 @@ function Homepagehero() {
           </div>
 
           {/* Divider */}
-          <div className="w-[2px] h-[135px] mx-2.5 bg-[#F1F0F0]"></div>
+          <div className="w-[1px] h-[135px] mx-2.5 bg-[#F1F0F0]"></div>
 
           {/* Text Section */}
           <div className="flex flex-col justify-evenly h-[185px]">
@@ -89,7 +89,7 @@ function Homepagehero() {
               </p>
             </div>
             <div>
-              <p className="text-[12px] text-[#881609] font-[Georgia] font-[400] leading-snug md:text-[12px]">
+              <p className="text-[12px] text-[#881609] font-[Georgia] font-[400] leading-snug md:text-[10px]">
                 Ters, as opposed to using 'Content here, content here', making it look like readable English.
               </p>
             </div>
