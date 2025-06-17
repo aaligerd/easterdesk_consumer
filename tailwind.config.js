@@ -13,6 +13,9 @@ module.exports = {
                 danger: '#EF4444',
                 navbarbg: 'var(--navbarbackground)', // Keep this
             },
+            fontFamily: {
+                alatsi: ['Alatsi', 'sans-serif'],
+            },
         },
     },
     plugins: [],
