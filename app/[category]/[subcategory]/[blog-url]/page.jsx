@@ -2,8 +2,13 @@ import React from 'react'
 import Bookmark from '@/assets/icons/bookmark'
 import Share from '@/assets/icons/share'
 import Comment from '@/assets/icons/comment'
+import Navber from '@/components/Navbar/Navber'
+import LogoAndSearch from '@/components/LogoAndSearch/LogoAndSearch'
 function blogUrl() {
   return (
+    <>
+    <LogoAndSearch/>
+    <Navber/>
     <div id='story-container'>
       <div className="relative w-full h-full">
         <img
@@ -45,6 +50,7 @@ function blogUrl() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

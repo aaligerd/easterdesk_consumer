@@ -1,14 +1,14 @@
 const navbarItems = [
-    'World',
-    'Politics',
-    'Economy',
-    'Science & Tech',
+    'Home',
+    'Bengal',
+    'Nation',
+    'World News',
+    'Opinions',
+    'Election 2026',
     'Business',
-    'Travel',
-    'Climate',
-    'Lifestyle',
-    'Food',
+    'Enternailment',
     'Sports',
+    'Trends'
 ];
 
 export default navbarItems;

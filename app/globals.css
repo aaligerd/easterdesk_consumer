@@ -48,3 +48,9 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Lucida Calligraphy';
+  src: url('../fonts/Lucida-Calligraphy.ttf');
+  font-weight: bold;
+  font-style:italic;
+}
