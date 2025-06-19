@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fdfdfd;
+  --background: #fffbed;
   --foreground: #171717;
   --navbarbackground:#cf3207;
   --maincontainerwidth:70%
@@ -27,6 +27,7 @@ body {
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #fdfdfd;
+    /* --background: #fffbed; */
     --foreground: #101010;
   }
 }
@@ -49,8 +50,8 @@ body {
   font-style: normal;
 }
 @font-face {
-  font-family: 'Lucida Calligraphy';
-  src: url('../fonts/Lucida-Calligraphy.ttf');
-  font-weight: bold;
-  font-style:italic;
+  font-family: 'Italianno';
+  src: url('../fonts/Italianno.ttf');
+  font-weight: normal;
+  font-style:normal;
 }

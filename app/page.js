@@ -12,10 +12,10 @@ export default function Home() {
       
     <LogoAndSearch/>
       <header className="bg-navbarbg text-[#FDFDFD] ">
-        <Navber />
+        <Navber/>
       </header>
       <Homepagehero/>
-      <div className="flex mx-auto sm:w-[95%] md:w-[85%] lg:w-[75%] xl:w-[65%] 2xl:w-[55%]">
+      <div className="flex mx-auto sm:w-[95%] md:w-[85%] lg:w-[75%]  bg-[#fdfdfd]">
       <LatestNews/>
       <TrendingHeadlines/>
       </div>

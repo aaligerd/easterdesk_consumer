@@ -24,7 +24,7 @@ function Homepagehero() {
   ];
 
   return (
-    <div className="w-[100%] sm:w-[95%] md:w-[85%] lg:w-[75%] mx-auto flex flex-col-reverse justify-center md:flex-row bg-white">
+    <div className="w-[100%] sm:w-[95%] md:w-[85%] lg:w-[75%]  mx-auto flex flex-col-reverse justify-center md:flex-row bg-[#fdfdfd]">
       <div className="mx-auto w-[90%] sm:w-[90%] md:w-[50%] lg:w-1/2 p-4 sm:p-5 bg-[#FDFDFD] flex flex-col gap-y-4 sm:gap-y-5">
         <Carosule slides={data} />
         <div className="flex">

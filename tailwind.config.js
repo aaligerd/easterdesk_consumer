@@ -15,7 +15,8 @@ module.exports = {
             },
             fontFamily: {
                 alatsi: ['Alatsi', 'sans-serif'],
-                lucida: ['Lucida Calligraphy', 'sans-serif'],
+                lucida: ['Lucida Calligraphy','cursive'],
+                italianno: ['Italianno'],
             },
         },
     },
