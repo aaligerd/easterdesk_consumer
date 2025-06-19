@@ -2,15 +2,9 @@ import React from 'react'
 
 function LogoAndSearch() {
   return (
-    <div className="flex items-center justify-between gap-4 py-3 md:flex-row flex-col mx-auto w-[85%] lg:w-[75%]"> {/* Stack on mobile, row on desktop */}
+    <div className="flex items-center justify-between gap-4 py-3 px-4 md:flex-row flex-col mx-auto w-[85%] lg:w-[75%]"> {/* Stack on mobile, row on desktop */}
         <div className="w-full md:w-[50%] flex justify-center md:justify-start">
-          {/* Full width on mobile, 30% on desktop */}
-          {/* <img
-            src="/your-logo.svg"
-            alt="Logo"
-            className="h-8 object-contain"
-          /> */}
-          <p className='text-[50px] font-[PTSerif] font-bold'>The Eastern Gazette</p>
+          <p className='text-[25px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-[PTSerif] font-bold'>The Eastern Gazette</p>
         </div>
         <form>
           <div className="w-full flex"> {/* Full width on mobile, 70% on desktop */}

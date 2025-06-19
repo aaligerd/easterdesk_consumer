@@ -3,6 +3,7 @@
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useState } from "react";
+import Link from 'next/link';
 
 export default function Carousel({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,12 +26,14 @@ export default function Carousel({ slides }) {
             <div className="relative w-full h-full">
               <img
                 className="w-full h-full object-cover"
-                src={ele.image}
+                src={ele.thumbnail_url}
                 alt="carousel-slide"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
               <div className="absolute bottom-5 left-5 text-white font-[Georgia] font-bold lg:text-[20px] text-xs drop-shadow-lg  md:text-[16px]">
-                {ele.text}
+                <Link href={`/story/${ele.category}/${ele.subcategory}/${ele.seo_url}`}>
+                  {ele.title}
+                </Link>
               </div>
             </div>
           </div>

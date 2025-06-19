@@ -23,7 +23,7 @@ function Navber() {
         "
       aria-label="Primary navigation"
     >
-      <div className="flex mx-auto px-4 w-full max-w-[85%]">
+      <div className="flex mx-auto px-4 w-full lg:w-[75%] md:w-[85%] sm:w-[95%] overflow-x-auto">
         {navbarItems.map((item) => {
           const path = generatePath(item);
           const isActive = pathname === path;
