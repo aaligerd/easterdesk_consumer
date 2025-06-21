@@ -19,8 +19,6 @@ export default function Home() {
       <LatestNews/>
       <TrendingHeadlines/>
       </div>
-
-
       <footer className="h-5 text-center text-xs text-gray-500 mb-2">
         © 2025 YourSite
       </footer>

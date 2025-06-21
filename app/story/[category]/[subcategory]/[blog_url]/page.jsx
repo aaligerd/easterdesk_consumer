@@ -8,7 +8,7 @@ import LogoAndSearch from '@/components/LogoAndSearch/LogoAndSearch';
 
 
 async function blogUrl({ params }) {
-  const { category, subcategory, blog_url } = params;
+  const { category, subcategory, blog_url } = await params;
   const article = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/v1/story/${blog_url}`, { next: { revalidate: 60 } });
   const data = await article.json();
   const content = JSON.parse(data.data.content);
@@ -21,7 +21,7 @@ async function blogUrl({ params }) {
         <div className="relative w-full h-full">
           <img
             className="w-full h-full object-cover"
-            src={content.blocks[0].data.file.url}
+            src={content.blocks[0].data.url}
             alt="Tiger"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
@@ -86,7 +86,7 @@ async function blogUrl({ params }) {
                 case 'image':
                   return (
                     <div key={index} className='w-full my-10'>
-                      <img src={block.data.file.url} alt={block.data.caption} className='w-full object-fit' />
+                      <img src={block.data.url} alt={block.data.title} className='w-full object-fit' />
                       {block.data.caption && <p className='text-[14px] font-normal font-[Georgia] text-center mt-2'>{block.data.caption}</p>}
                     </div>
                   );
