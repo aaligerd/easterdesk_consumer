@@ -17,6 +17,7 @@ module.exports = {
                 alatsi: ['Alatsi', 'sans-serif'],
                 lucida: ['Lucida Calligraphy','cursive'],
                 italianno: ['Italianno'],
+                ancient: ['"Ancient Medium"','calligraphy'],
             },
         },
     },

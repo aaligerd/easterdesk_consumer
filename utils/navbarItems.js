@@ -6,7 +6,7 @@ const navbarItems = [
     'Opinions',
     'Election 2026',
     'Business',
-    'Enternailment',
+    'Entertainment',
     'Sports',
     'Trends'
 ];

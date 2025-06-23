@@ -8,8 +8,9 @@ import navbarItems from "@/utils/navbarItems";
 function Navber() {
   const pathname = usePathname();
 
+  
   const generatePath = (label) =>
-    "/" + label.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-");
+    label=="Home"?"/":"topic/" + label.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-");
 
   return (
     <nav
@@ -26,6 +27,7 @@ function Navber() {
       <div className="flex mx-auto px-4 w-full lg:w-[75%] md:w-[85%] sm:w-[95%] overflow-x-auto">
         {navbarItems.map((item) => {
           const path = generatePath(item);
+          console.log(pathname, path);
           const isActive = pathname === path;
 
           return (
@@ -36,8 +38,8 @@ function Navber() {
                 px-3 py-2 
                 cursor-pointer 
                 hover:bg-[#530000] 
-                ${isActive ? "font-bold text-black bg-amber-300" : "text-white"}
               `}
+              //${isActive ? "font-bold text-black bg-amber-300" : "text-white"}
             >
               <Link href={path}>
                 <span className="text-xs select-none font-alatsi font-[400] lg:text-[17px]">{item}</span>

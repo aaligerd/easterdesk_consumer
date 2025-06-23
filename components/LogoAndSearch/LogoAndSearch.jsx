@@ -1,10 +1,39 @@
 import React from 'react'
+import localFont from 'next/font/local'
+
+  const ancientFont = localFont({
+  src: '../../fonts/AncientMedium.ttf',
+  })
+
+  const fondamento= localFont({
+  src: '../../fonts/Fondamento.ttf',
+  })
+
+   const chomsky= localFont({
+  src: '../../fonts/Chomsky.otf',
+  })
+
+     const italianno= localFont({
+  src: '../../fonts/Italianno.ttf',
+  })
+
+       const lucidaCalligraphy= localFont({
+  src: '../../fonts/Lucida-Calligraphy.ttf',
+  })
+       const ptserif= localFont({
+  src: '../../fonts/PTSerif-Italic.ttf',
+  })
 
 function LogoAndSearch() {
+
+  
   return (
     <div className="flex items-center justify-between gap-4 py-3 px-4 md:flex-row flex-col mx-auto w-[85%] lg:w-[75%]"> {/* Stack on mobile, row on desktop */}
-        <div className="w-full md:w-[50%] flex justify-center md:justify-start">
-          <p className='text-[25px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-[PTSerif] font-bold'>The Eastern Gazette</p>
+        <div className="w-full md:w-[50%] flex justify-start items-center gap-x-5 md:justify-start">
+          <div className='w-10 h-10'>
+            <img className='w-full h-full' src="/logo/logo.png" alt="" srcset="" />
+          </div>
+          <p className='text-[25px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-[AncientMedium] font-bold'><span className={ptserif.className}>The Eastern Gazette</span></p>
         </div>
         <form>
           <div className="w-full flex"> {/* Full width on mobile, 70% on desktop */}

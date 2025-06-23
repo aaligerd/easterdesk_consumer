@@ -45,13 +45,19 @@ body {
 
 @font-face {
   font-family: 'Alatsi';
-  src: url('../fonts/Alatsi-Regular.ttf') format('woff2');
+  src: url('/fonts/Alatsi-Regular.ttf') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Italianno';
-  src: url('../fonts/Italianno.ttf');
+  src: url('/fonts/Italianno.ttf');
+  font-weight: normal;
+  font-style:normal;
+}
+@font-face {
+  font-family: 'Ancient Medium';
+  src: url('/fonts/AncientMedium.ttf') format('truetype');
   font-weight: normal;
   font-style:normal;
 }
