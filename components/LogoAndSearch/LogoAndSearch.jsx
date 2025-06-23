@@ -29,11 +29,11 @@ function LogoAndSearch() {
   
   return (
     <div className="flex items-center justify-between gap-4 py-3 px-4 md:flex-row flex-col mx-auto w-[85%] lg:w-[75%]"> {/* Stack on mobile, row on desktop */}
-        <div className="w-full md:w-[50%] flex justify-start items-center gap-x-5 md:justify-start">
-          <div className='w-10 h-10'>
-            <img className='w-full h-full' src="/logo/logo.png" alt="" srcset="" />
+        <div className="w-full md:w-[50%] flex justify-center items-center gap-x-5 md:justify-start">
+          <div className='w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12'>
+            <img className='w-full h-full' src="/logo/logo.png" alt="" />
           </div>
-          <p className='text-[25px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-[AncientMedium] font-bold'><span className={ptserif.className}>The Eastern Gazette</span></p>
+          <p className='text-[25px] md:text-[25px] lg:text-[30px] xl:text-[40px] font-[AncientMedium] font-bold text-[#310803]'><span className={fondamento.className}>The Eastern Gazette</span></p>
         </div>
         <form>
           <div className="w-full flex"> {/* Full width on mobile, 70% on desktop */}

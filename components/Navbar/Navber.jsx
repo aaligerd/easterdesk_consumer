@@ -5,12 +5,12 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import navbarItems from "@/utils/navbarItems";
 
-function Navber() {
+function Navbar() {
   const pathname = usePathname();
 
   
   const generatePath = (label) =>
-    label=="Home"?"/":"topic/" + label.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-");
+    label=="Home"?"/":"/topic/" + label.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-");
 
   return (
     <nav
@@ -24,12 +24,10 @@ function Navber() {
         "
       aria-label="Primary navigation"
     >
-      <div className="flex mx-auto px-4 w-full lg:w-[75%] md:w-[85%] sm:w-[95%] overflow-x-auto">
+      <div className="flex mx-auto w-full lg:w-[75%] md:w-[85%] sm:w-[95%] overflow-x-auto">
         {navbarItems.map((item) => {
           const path = generatePath(item);
-          console.log(pathname, path);
           const isActive = pathname === path;
-
           return (
             <div
               key={item}
@@ -38,6 +36,7 @@ function Navber() {
                 px-3 py-2 
                 cursor-pointer 
                 hover:bg-[#530000] 
+                text-white
               `}
               //${isActive ? "font-bold text-black bg-amber-300" : "text-white"}
             >
@@ -52,4 +51,4 @@ function Navber() {
   );
 }
 
-export default Navber;
+export default Navbar;
