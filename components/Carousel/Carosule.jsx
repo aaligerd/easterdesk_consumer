@@ -23,6 +23,7 @@ export default function Carousel({ slides }) {
       <div ref={sliderRef} className="keen-slider">
         {slides.map((ele, indx) => (
           <div className="keen-slider__slide relative" key={indx}>
+            <Link href={`/story/${ele.category}/${ele.subcategory}/${ele.seo_url}`}>
             <div className="relative w-full h-full">
               <img
                 className="w-full h-full object-cover"
@@ -31,11 +32,12 @@ export default function Carousel({ slides }) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
               <div className="absolute bottom-5 left-5 text-white font-[Georgia] font-bold lg:text-[20px] text-xs drop-shadow-lg  md:text-[16px]">
-                <Link href={`/story/${ele.category}/${ele.subcategory}/${ele.seo_url}`}>
+                {/* <Link href={`/story/${ele.category}/${ele.subcategory}/${ele.seo_url}`}> */}
                   {ele.title}
-                </Link>
+                {/* </Link> */}
               </div>
             </div>
+            </Link>
           </div>
         ))}
       </div>
