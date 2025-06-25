@@ -1,36 +1,76 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 function CreateSlider({ slides }) {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
+
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    setCurrent((prev) => (prev === length - 1 ? 0 : prev + 1));
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+    setCurrent((prev) => (prev === 0 ? length - 1 : prev - 1));
   };
 
-
+  // Auto Slide
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
     }, 5000);
     return () => clearInterval(interval);
-  }, [current]);
+  }, []);
+
+  // Handle touch start
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  // Handle touch move
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  // Handle touch end
+  const handleTouchEnd = () => {
+    const distance = touchStartX.current - touchEndX.current;
+    const threshold = 50; // Minimum swipe distance
+
+    if (distance > threshold) {
+      nextSlide(); // Swiped left
+    } else if (distance < -threshold) {
+      prevSlide(); // Swiped right
+    }
+
+    // Reset values
+    touchStartX.current = null;
+    touchEndX.current = null;
+  };
 
   return (
-    <div className="relative w-full overflow-hidden">
-      <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${current * 100}%)` }}>
+    <div
+      className="relative w-full overflow-hidden"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
+      <div
+        className="flex transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
         {slides.map((ele, index) => (
           <div className="w-full flex-shrink-0" key={index}>
             <Link href={`/story/${ele.category}/${ele.subcategory}/${ele.seo_url}`}>
-
               <div className="relative w-full h-[250px] md:h-[300px]">
-                <img src={ele.thumbnail_url} alt={ele.title} className="w-full h-full object-cover" />
+                <img
+                  src={ele.thumbnail_url}
+                  alt={ele.title}
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
                 <div className="absolute bottom-5 left-5 text-white font-bold text-lg md:text-2xl drop-shadow">
                   {ele.title}
@@ -69,4 +109,5 @@ function CreateSlider({ slides }) {
   );
 }
 
-export default CreateSlider
+export default CreateSlider;
+
