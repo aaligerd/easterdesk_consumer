@@ -1,9 +1,9 @@
 import React from 'react'
 
-function subCategory() {
+function Subcategory() {
   return (
     <div>Subcategory</div>
   )
 }
 
-export default subCategory
+export default Subcategory
