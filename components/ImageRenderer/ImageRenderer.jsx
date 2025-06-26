@@ -4,7 +4,6 @@ import Image from 'next/image';
 import React from 'react';
 
 export default function ImageRenderer({ url,alt,lowUrl}) {
-    console.log("Low Url: ",lowUrl)
   return (
     <Image
       src={url||""}

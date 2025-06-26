@@ -16,7 +16,6 @@ async function blogUrl({ params }) {
   );
   const data = await article.json();
   const content = JSON.parse(data.data.content);
-  console.log(content.blocks[0].data);
   return (
     <>
       <LogoAndSearch />
