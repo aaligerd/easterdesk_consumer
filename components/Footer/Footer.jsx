@@ -12,6 +12,7 @@ const fondamento = localFont({
 
 function Footer() {
   return (
+    <footer>
     <div id="main-footer-div" className="w-full bg-[#881609]">
       <div id="first-footer-div" className="mx-auto w-[80%] flex justify-between py-3 md:w-[85%] lg:w-[75%]">
         <div>
@@ -51,6 +52,7 @@ function Footer() {
         </p>
       </div>
     </div>
+    </footer>
   );
 }
 

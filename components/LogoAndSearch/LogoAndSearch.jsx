@@ -1,6 +1,7 @@
 import React from "react";
 import localFont from "next/font/local";
 import Link from "next/link";
+import LogoSvg from "./LogoSvg";
 
 const ancientFont = localFont({
   src: "../../fonts/AncientMedium.ttf",
@@ -31,16 +32,17 @@ function LogoAndSearch() {
       {" "}
       {/* Stack on mobile, row on desktop */}
       <div className="w-full md:w-[50%] flex justify-center items-center gap-x-5 md:justify-start">
-        <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12">
+        {/* <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12">
           <Link href="/">
             <img className="w-full h-full" src="/logo/logo.png" alt="" />
           </Link>
-        </div>
-        <h1 className="text-[25px] md:text-[25px] lg:text-[30px] xl:text-[40px] font-[AncientMedium] font-bold text-[#310803]">
+        </div> */}
+        {/* <h1 className="text-[25px] md:text-[25px] lg:text-[30px] xl:text-[40px] font-[AncientMedium] font-bold text-[#310803]"> */}
           <Link href="/">
-          <span className={fondamento.className}>The Eastern Gazette</span>
+          {/* <span className={fondamento.className}>The Eastern Gazette</span> */}
+          <LogoSvg className="w-full h-auto md:w-[250px] lg:w-[400px]"/>
           </Link>
-        </h1>
+        {/* </h1> */}
       </div>
       <form>
         <div className="w-full flex">

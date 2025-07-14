@@ -10,7 +10,7 @@ function Navbar() {
 
   
   const generatePath = (label) =>
-    label=="Home"?"/":"/topic/" + label.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-");
+    label=="Home"?"/":"/category/" + label.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-");
 
   return (
     <nav
