@@ -1,4 +1,5 @@
-import React from "react";
+'use client';
+import React, { useEffect } from "react";
 import localFont from "next/font/local";
 import Link from "next/link";
 import LogoSvg from "./LogoSvg";
@@ -27,6 +28,10 @@ const ptserif = localFont({
 });
 
 function LogoAndSearch() {
+  useEffect(() => {
+    alert("The site is under development, some features may not work as expected.");
+  }, []);
+  
   return (
     <div className="flex items-center justify-between gap-4 py-3 px-4 md:flex-row flex-col mx-auto w-[85%] lg:w-[75%]">
       {" "}
